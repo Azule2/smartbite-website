@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+            scrollbar-width: normal;
+            scrollbar-color: red green;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+    <script src="https://kit.fontawesome.com/0b5a3de497.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&family=Press+Start+2P&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/x-icon" href="{% static '/images/icon.png' %}">
+
+
+</head>
+<body>
+    <header>
+        {% include 'pages/navbar.html' %}
+    </header>
+    <main>
+
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="{{ post.images.url }}">
+
+                </div>
+                <div class="slide">
+                    <img src="{% static '/images/navbar2.png' %}" alt="">
+                </div>
+                <div class="slide">
+                    <img src="{% static '/images/navbar3.png' %}" alt="">
+                </div>
+                <div class="slide">
+                    <img src="{% static '/images/navbar4.png' %}" alt="">
+                </div>
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manial-btn"></label>
+                <label for="radio2" class="manial-btn"></label>
+                <label for="radio3" class="manial-btn"></label>
+                <label for="radio4" class="manial-btn"></label>
+            </div>
+        </div>
+
+        
+        <div class="card card1">
+            <h3>What is SmartBite</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga dignissimos veniam omnis quam repellendus perspiciatis. Numquam obcaecati minima repellat, vel hic nobis animi. Natus provident vitae impedit harum quae.</p>
+        </div>
+
+        
+        <div class="card card2">
+            <h3>SmartBite API</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga dignissimos veniam omnis quam repellendus perspiciatis. Numquam obcaecati minima repellat, vel hic nobis animi. Natus provident vitae impedit harum quae.</p>
+        </div>
+
+        
+        <div class="card card3">
+            <h3>SmartBite Projects</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga dignissimos veniam omnis quam repellendus perspiciatis. Numquam obcaecati minima repellat, vel hic nobis animi. Natus provident vitae impedit harum quae.</p>
+        </div>
+
+        
+        <div class="card card4">
+            <h3>SmartBite Roles</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga dignissimos veniam omnis quam repellendus perspiciatis. Numquam obcaecati minima repellat, vel hic nobis animi. Natus provident vitae impedit harum quae.</p>
+        </div>
+        <div class="images">
+            <a href="#">
+                <img src="{% static '/images/1.png' %}" class="images1">
+            </a>
+            <a href="#">
+                <img src="{% static '/images/2.png' %}" class="images2">
+            </a>
+        </div>
+    </main>
+    <footer class = "footer">
+        {% include 'pages/footer.html' %}
+
+    </footer>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio'+ counter).checked = true;
+            counter++;
+            if(counter>4){
+                counter=1;
+            }
+        },5000)
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Contact</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static '/contact.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static '/images/SmartBite.png' %}">
+    <script src="https://kit.fontawesome.com/0b5a3de497.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&family=Press+Start+2P&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+        {% include 'pages/navbar.html' %}
+    </header>
+    <div class="card card1" href="https://discord.gg/sw2PnkHP2T">
+        <h3>Discord</h3>
+        <a href="https://discord.gg/sw2PnkHP2T">SmartBite Discord Server Here Annoucement Update and New events.</a>
+    </div>
+
+    
+    <div class="card card2" >
+        <h3>Facebook</h3>
+        <a href="https://www.facebook.com/SmartBite0">SmartBite Facebook Page Here Post About SmartBite and Update , events</a>
+    </div>
+
+    
+    <div class="card card3">
+        <h3>Twitter</h3>
+        <a href="https://twitter.com/SmartBite3">SmartBite Twitter Account Here Twitte About SmartBite and Update, events.</a>
+
+    </div>
+
+    
+    <div class="card card4">
+        <h3>Instagram</h3>
+        <a href="https://www.instagram.com/smartbite0/">SmartBite Instagram Account Here Post and Story SmartBite day.</a>
+        
+
+    </div>
+
+
+    <footer class = "footer">
+        {% include 'pages/footer.html' %}
+
+    </footer>
+</body>
+</html>

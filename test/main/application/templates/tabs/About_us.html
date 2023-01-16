@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+            scrollbar-width: normal;
+            scrollbar-color: red green;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite</title>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static '/about_us.css' %}">
+    <script src="https://kit.fontawesome.com/0b5a3de497.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&family=Press+Start+2P&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+
+    <header>
+        {% include 'pages/navbar.html' %}
+    </header>
+
+    <main>
+        <img src="{% static '/images/undraw_team_spirit_re_yl1v.svg' %}" class="images1">
+        <div class="about_text">
+            {% if user.is_authenticated %}
+            <h3> Hello {{user.username}}!!</h3>
+            <h4 class = "Text1">Here SmartBite</h4>
+            <h4>In Here Create And develop Artificial Intelligence, SmartBite Open In 1/1/2021</h4>
+            <h4>SmartBite Now Working 5 Project Try to Opened 3project in 2023</h4>
+            {% else %}
+
+            <h3>Hello User!!</h3>
+            <h4 class = "Text1">Here SmartBite.</h4>
+            <h4>In Here Create And develop Artificial Intelligence, SmartBite Open In 1/1/2021</h4>
+            <h4>SmartBite is now Working 5 Projects try to Open 3 Projects in 2023, SmartBite Founder Name Is Azule.</h4>
+            
+        </div>
+        {% endif %}
+        
+
+    </main>
+    
+    <footer>
+        {% include 'pages/footer.html' %}
+    </footer>
+</body>
+</html>

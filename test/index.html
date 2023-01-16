@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/SmartBite.png">
+    <script src="https://kit.fontawesome.com/0b5a3de497.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&family=Press+Start+2P&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>
+
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Login</a></li>
+                    <i class="fa-solid fa-moon"></i>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="images/navbar1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/navbar2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/navbar3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/navbar4.png" alt="">
+                </div>
+                
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manial-btn"></label>
+                <label for="radio2" class="manial-btn"></label>
+                <label for="radio3" class="manial-btn"></label>
+                <label for="radio4" class="manial-btn"></label>
+            </div>
+        </div>
+
+        
+        <div class="card card1">
+            <h3>Test1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga dignissimos veniam omnis quam repellendus perspiciatis. Numquam obcaecati minima repellat, vel hic nobis animi. Natus provident vitae impedit harum quae.</p>
+        </div>
+
+        
+        <div class="card card2">
+            <h3>Test2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga dignissimos veniam omnis quam repellendus perspiciatis. Numquam obcaecati minima repellat, vel hic nobis animi. Natus provident vitae impedit harum quae.</p>
+        </div>
+
+        
+        <div class="card card3">
+            <h3>Test3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga dignissimos veniam omnis quam repellendus perspiciatis. Numquam obcaecati minima repellat, vel hic nobis animi. Natus provident vitae impedit harum quae.</p>
+        </div>
+
+        
+        <div class="card card4">
+            <h3>Test4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga dignissimos veniam omnis quam repellendus perspiciatis. Numquam obcaecati minima repellat, vel hic nobis animi. Natus provident vitae impedit harum quae.</p>
+        </div>
+        <div class="images">
+            <a href="#">
+                <img src="images/1.png" class="images1">
+            </a>
+            <a href="#">
+                <img src="images/2.png" class="images2">
+            </a>
+        </div>
+
+    </main>
+    <footer class = "footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Application Programming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">payment option (SmartbiteTest)</a></li>
+                        <li><a href="#">others</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Project</h4>
+                    <ul>
+                        <li><a href="#">Coming Soon</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/SmartBite0"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/smartbite0/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/SmartBite3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://discord.gg/sw2PnkHP2T"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio'+ counter).checked = true;
+            counter++;
+            if(counter>4){
+                counter=1;
+            }
+        },5000)
+    </script>
+
+</body>
+</html>

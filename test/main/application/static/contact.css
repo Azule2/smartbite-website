@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    justify-self: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+header{
+    margin-top: 24px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 35px;
+    background-image: url(images/download6.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 10%;
+    
+    transition: transform 0.5s;
+    margin-top: 280px;
+    
+}
+.card1{
+    background-image: url(images/discord.png);
+    font-size: 13px;
+    
+    
+}
+
+.card2{
+    background-image: url(images/Facebook.png);
+    font-size: 13px;
+}
+
+.card3{
+    background-image: url(images/Twitter.png);
+    font-size: 12px;
+}
+
+.card4{
+    background-image: url(images/instagram.png);
+    font-size: 13px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card1 a{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.3rem 1.4rem 0 0;
+    text-decoration: none;
+    color: #000000;
+}
+.card2 a{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.3rem 1.4rem 0 0;
+    text-decoration: none;
+    color: #000000;
+}
+.card3 a{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.3rem 1.4rem 0 0;
+    text-decoration: none;
+    color: #000000;
+}
+.card4 a{
+    text-align: right;
+    font-size: 0.8rem;
+    margin: 0.3rem 1.4rem 0 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+@media screen and (max-width: 390px) {
+    header{
+        position: static;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        margin-bottom: 430px;
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        
+    }
+
+
+    nav{
+    position: relative;
+    top: 560%;
+    left: -30%;
+
+
+    transform: translate(-50%,-50%);
+    background-color: var(--three-scolor);
+    border-style: double;
+    border-color: white;
+    border-radius: 15px;
+    padding: 5px;
+
+    }
+
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+    
+    }
+    nav ul li{
+        display: inline-flex;
+        
+    }
+    nav ul li a{
+        position: relative;
+        padding: 11px 0 10px;
+        margin: 0 45px;
+        color: var(--secondary-color);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px ) {
+    header{
+        margin-bottom: 410px;
+
+    }
+
+}
+@media screen and (max-width: 1024px ) {
+    nav{
+        position: absolute;
+        width: 640px;
+        top: 20%;
+        left: 50%;
+    
+    }
+}
+@media screen and (max-width: 320px ) {
+    header{
+        margin-bottom: 360px;
+
+    }
+    nav{
+        position: absolute;
+        width: 300px;
+        top: 20%;
+        left: 50%;
+    
+    }
+    nav ul li a{
+        font-size: 12px;
+    }
+}
